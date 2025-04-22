@@ -1,0 +1,91 @@
+﻿/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Section Headings */
+h1, h2 {
+    color: #007acc;
+}
+
+/* Input & Buttons */
+input[type="text"] {
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #007acc;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+    button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+
+/* Product List Items */
+.product {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+/* Product Table */
+#productsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+    #productsTable th,
+    #productsTable td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    #productsTable th {
+        background-color: #007acc;
+        color: white;
+    }
+
+/* Pagination Controls */
+#pageNumber {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Data Display */
+#searchResults,
+#filteredProducts,
+#productList,
+#userData {
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    input[type="text"] {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
